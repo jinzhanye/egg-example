@@ -13,7 +13,6 @@ class AppBootHook {
     //   'frameworkRequestLogger',
     // ]
     // this.app.config.coreMiddleware.push(...middlewares) // 将中间件添加到egg中间件列表
-    console.log('1111', this.app.config)
   }
 
   configDidLoad() {
@@ -29,13 +28,11 @@ class AppBootHook {
   async willReady() {
     // 所有的插件都已启动完毕，但是应用整体还未 ready
     // 可以做一些数据初始化等操作，这些操作成功才会启动应用
-    console.log('123213')
   }
 
   async didReady() {
     // 应用已经启动完毕
     // this.app.router.get('/info', infoRouter);
-    console.log('123123')
   }
 
   async serverDidReady() {

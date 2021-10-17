@@ -19,9 +19,6 @@ module.exports = appInfo => {
   config.middleware = [];
 
   config.customLoader = {
-    enum: {
-      directory: 'app/enum',
-    },
     utils: {
       directory: 'app/utils',
       inject: 'app',
